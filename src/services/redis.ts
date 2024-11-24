@@ -1,7 +1,8 @@
 import { createClient } from 'redis';
 
-const redisClient = createClient();
-const publisher = createClient();
+export const redisClient = createClient();
+export const publisher = createClient();
+export const subscriber = createClient();
 
 export const connectToRedis = async () => {
     try {
